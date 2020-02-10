@@ -1,0 +1,480 @@
+* {margin:0px;padding:0px;top:0px;left:0px;}
+
+/*Carrosel começa aqui*/
+	.jcarousel-wrapper {
+    margin: 15px auto 0 -50px;
+    position: relative;
+    border: 5px solid #fff;
+    width: 990px;
+    height: 530px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 2px #999;
+   -moz-box-shadow: 0 0 2px #999;
+    box-shadow: 0 0 2px #999;
+}
+.jcarousel-wrapper .photo-credits {
+    position: absolute;
+    right: 15px;
+    bottom: 0;
+    font-size: 13px;
+    color: #fff;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.85);
+    opacity: .66;
+}
+.jcarousel-wrapper .photo-credits a {
+    color: #fff;
+}
+/** Carousel **/
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+}
+.jcarousel ul {
+    /* width: 20000em; */
+		width: 2000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.jcarousel li {
+    float: left;
+    width: 1200px;
+    height: 530px;
+}
+/** Carousel Controls **/
+.jcarousel-control-prev,
+.jcarousel-control-next {
+    position: absolute;
+    top: 200px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background: #4E443C;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 0 1px #000;
+    font: 24px/27px Arial, sans-serif;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    -webkit-box-shadow: 0 0 2px #999;
+   -moz-box-shadow: 0 0 2px #999;
+    box-shadow: 0 0 2px #999;
+}
+.jcarousel-control-prev {
+    left: -70px;
+}
+.jcarousel-control-next {
+    right: 50px;
+}
+.jcarousel-control-prev:hover span,
+.jcarousel-control-next:hover span {
+    display: block;
+}
+/*Carrosel termina aqui*/
+body{
+	text-align: left;
+	background-image: url('../images/park-tool-05.jpg');/*Imagem do fundo da tela*/
+}
+#central{/* Mexi com toda parte da frente*/
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 3px;
+	margin-bottom: auto;
+	position: relative;
+	width: 50%;
+	text-align: left;
+	background-color: #FFFFFF;
+}
+#header{
+	background-image: url('../images/header.jpg');/* Imagem que fica com o logo e em cima na primeira pagina*/
+	height: 200px;
+	width: 1000px;
+	margin-left:-100px;
+	margin-top: -10px;
+}
+#header a{ /*Css da imagem da primeira pagina*/
+	font-size: 16px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bolder;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-family: Verdana;
+	position: relative;
+	left: -40px;
+	top: 140px;
+}
+.sitename { /* Class para o nome do logo*/
+	text-align: center;
+	width: 490px;
+
+}
+#menu{ /* Essa é a primeira parte do menu a sua localização, posicionament etc...*/
+	margin-left: -100px;
+	padding-left: 0px;
+	white-space: nowrap;
+	position: absolute;
+	height: 26px;
+	width: 1000px;
+	top: 200px;
+	background: url('../images/menubg.jpg') repeat-x top left; ///* Imagem para os bnt*/
+	font-family: Arial;
+	text-transform: uppercase;
+	font-size: 12px !important;
+	line-height: 20px;
+}
+/*menu */
+#menu li{
+	display: inline;
+	list-style-type: none;
+}
+#menu li a.title {
+	padding:2px 10px;
+	height: 20px;
+	width: auto;
+	display: inline;
+	position: absolute;
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+	margin-top: 0px;
+}
+#menu li a span{
+	padding: 3px 10px;
+	height: 40px;
+	width: auto;
+	display: inline;
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+	margin-top: -2px;
+}
+#menu a.title:hover {
+	background: #0687eb;
+	height: 30px;
+	cursor: pointer;
+	width: auto;
+
+}
+
+
+#Primeiro:hover .sub-menu1 {/*para poder pegar o hover = mause em cima*/
+		display: block;
+}
+.sub-menu1 {  /* menu suspens*/
+ display: none;
+ position: absolute;
+ margin-top: 22px;
+ border-radius:  10px;
+ z-index: 2;
+ height: 40px;
+ width: 160px;
+ background-color: white;
+ margin-left: 30px;
+ border-radius: 5px 5px 5px 5px;
+ border:solid 2px;
+ padding: 2px;
+}
+.sub-menu1 li a { /* dentro do menu suspen e o elemento a vai receber esse style*/
+	float: left;
+	color: black;
+	width: 100%;
+}
+.sub-menu1 li a.subtitle:hover {/* quando colocar o mause em cima vai pararecer esse fundo*/
+	background: 	#C8C;
+	border-radius: 5px;
+}
+.abc {
+	display: none;
+}
+/*menu Estoque*/
+#Segundo:hover .sub-menu2 {/*para poder pegar o hover = mause em cima*/
+		display: block;
+}
+.sub-menu2 {  /* menu suspens*/
+	display: none;
+	position: absolute;
+  margin-top: 22px;
+	margin-left:250px;
+  z-index: 2;
+  height: 20px; /*Altura*/
+  width: 135px; /*Largura*/
+  background-color: white;
+	border:solid 2px black; /* Para Fazer a borda dele*/
+	border-radius:  5px;
+	padding: 2px;
+}
+.sub-menu2 li a { /* dentro do menu suspen e o elemento a vai receber esse style*/
+	float: left;
+	color: black;
+	width: 100%;
+}
+.sub-menu2 li a.subtitle:hover {/* quando colocar o mause em cima vai pararecer esse fundo*/
+	background: 	#C8C;
+	border-radius: 5px;
+}
+.seg1 {
+	display: none;
+}
+/*Menu Serviços: Ordem de serviço e Orçamento*/
+#Terceiro:hover .sub-menu3 {/*para poder pegar o hover = mause em cima*/
+		display: block;
+}
+.sub-menu3 {  /* menu suspens*/
+	display: none;
+	position: absolute;
+	margin-top: 22px;
+	margin-left: 475px;
+	z-index: 2;
+	height: 35px; /*Altura*/
+	width: 215px; /*Largura*/
+	background-color: white;
+	border:solid 2px black;
+	border-radius:  4px;
+	padding: 5px;
+
+}
+
+.sub-menu3 li a { /* dentro do menu suspen e o elemento a vai receber esse style*/
+	float: left;
+	color: black;
+	width: 100%;
+}
+.sub-menu3 li a.subtitle:hover {/* quando colocar o mause em cima vai pararecer esse fundo*/
+	background: 	#C8C;
+	border-radius: 5px;
+}
+.ter1 {
+	display: none;
+}
+#bt1{left: 10px;} /* Aqui é os o posicionamento dos bnt*/
+#bt2{left: 230px;}
+#bt3{left: 450px;}
+#bt4{left: 700px;}
+#deslogarUsuario{left: 900px;}
+
+#leftside{
+	float: left;
+	margin-left: 20px;
+
+
+}
+#content{ /* Aqui é a div que fica atras do carrosel aqui fica a largula e comprimento da imagem atras*/
+	margin-top: 225px;
+	position: absolute;
+	margin-left: -100px;
+	width: 1000px;
+	margin-bottom: -50px;
+	background-color: #FFFFFF;
+}
+#picture1{ /* Aqui é para o posicionametno correto do corrosel */
+	height: 532px;
+	width: 1500px;
+	margin-left: 30px;
+	margin-top: 40px;
+}
+/*#footer p{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFFFFF;
+	float: right;
+	padding-top: 108px;
+	margin-right: 10px;
+}*/
+table#resultado_table_cpf{ /*Colocando borda na table inteira por fora*/
+		border: solid 1px black;
+		border-spacing: 0px;
+
+
+
+}
+table#resultado_table_cpf .title_table td{ /*Colocando borda nas td "linhas"*/
+		background-color: #017ff2;
+		border: solid 1px black;
+		text-align: center;
+		font-weight: bolder;
+		width: 200px;
+}
+
+table#resultado_table_cpf .criado td{ /*Colocando borda nas td "linhas"*/
+		background-color: #a1dcee;
+		border: solid 1px black;
+		text-align: center;
+		width: 500px;
+
+}
+table#resultado_table_btnBike{ /*Colocando borda na table inteira por fora*/
+		border: solid 1px black;
+		border-spacing: 0px;
+		margin-top: -10px;
+		width: 820px;
+
+}
+table#resultado_table_btnOS{
+	border: solid 1px black;
+	border-spacing: 0px;
+	margin-top: 1px;
+	width: 823px;
+
+
+}
+table#resultado_table_btnOS .title_table td{
+	background-color: #017ff2;
+	border: solid 1px black;
+	text-align: center;
+	font-weight: bolder;
+}
+table#resultado_table_btnOS .criado td{
+	background-color: #a1dcee;
+	border: solid 1px black;
+	text-align: center;
+	width: 200px;
+}
+table#resultado_table_btnBike .title_table td{ /*Colocando borda nas td "linhas"*/
+		background-color: #017ff2;
+		border: solid 1px black;
+		text-align: center;
+		font-weight: bolder;
+
+	}
+table#resultado_table_btnBike  .criado td{ /*Colocando borda nas td "linhas"*/
+		background-color: #a1dcee;
+		border: solid 1px black;
+		width: 200px;
+		text-align: center;
+
+}
+button.consultarBikeCPF {
+		width: 442px;
+}
+button.consultarOsCPF {
+		width: 395px;
+}
+/* Tabela da ordem de serviço*/
+table td#vt{
+	border: solid 1px black;
+	vertical-align: top;
+	font-weight: bolder;
+}
+table td#acs{
+	border: solid 1px black;
+	vertical-align: top;
+	font-weight: bolder;
+}
+table td#na{
+	border: solid 1px black;
+	vertical-align: top;
+	font-weight: bolder;
+}
+table td#qtd{
+	border: solid 1px black;
+	vertical-align: top;
+  font-weight: bolder;
+}
+div#serv_os  {
+		overflow-y: scroll;
+		border: solid 1px black;
+		margin-left: 20px;
+		width: 410px;
+		height: 100px;
+}
+
+div td#tra{
+		border: solid 1px black;
+		width: 131px;
+}
+div td#dis{
+		border: solid 1px black;
+		width: 80px;
+}
+div td#qt{
+		border: solid 1px black;
+		width: 70px;
+}
+div td#vl{
+		border: solid 1px black;
+		width: 80px;
+}
+#preloader{
+		position: absolute;
+		left: 0px;
+		right: 0px;
+		bottom: 0px;
+		top: 0px;
+		background: #ccc;
+}
+#ord{
+		top:200px;
+}
+
+div#ordem_os  {
+		overflow-y: scroll;
+		border: solid 1px black;
+		margin-left: 0px;
+		width: 843px;
+		height: 163px;
+}
+fieldset#fil{
+	border: solid 2px black;
+	width: auto;
+}
+div#bikes{
+	overflow-y: scroll;
+	border: solid 1px black;
+	margin-left: 0px;
+	width: 839px;
+	height:83px;
+}
+.title_relatorio1 td{
+	border: 1px solid black;
+	background-color: #a1dcee;
+}
+.primeiro_relatorio1 th{
+			border: 1px solid black;
+			color: black;
+			background-color: blue;
+			text-align: center;
+}
+div#relatorios table{
+		border: 1px solid black;
+		width: 898px;
+}
+.segundo_relatorio2 th{
+	border: 1px solid black;
+	color: black;
+	background-color: blue;
+	text-align: center;
+}
+.title_relatorio2 td{
+	border: 1px solid black;
+	background-color: #a1dcee;
+}
+.terceiro_relatorio3 th{
+	border: 1px solid black;
+	color: black;
+	background-color: blue;
+	text-align: center;
+}
+.title_relatorio3 td{
+		border: 1px solid black;
+		background-color: #a1dcee;
+}
+.title_relatorio4 td{
+		border: 1px solid black;
+			background-color: #a1dcee;
+}
+.terceiro_relatorio4 th{
+	border: 1px solid black;
+	color: black;
+	background-color: blue;
+	text-align: center;
+}
+
+div#dadosAdicionais span.respDados {
+	font-weight: bold;
+}
